@@ -1,8 +1,6 @@
 var planets = [];
 var G = 5;
 
-var collisions = [];
-
 function setup(){
     createCanvas(window.innerWidth, window.innerHeight);
     document.documentElement.style.overflow = 'hidden';
