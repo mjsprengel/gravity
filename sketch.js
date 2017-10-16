@@ -32,12 +32,14 @@ function draw(){
                         planets[i].set_vel(calc_momentum_transfer(planets[i].mass, planets[j].mass, planets[i].velocity, planets[j].velocity));  
                         planets[i].add_mass(planets[j].mass);  
                         planets.splice(j,1); // delete the smaller body from the array of bodies
+                        break; //break out of inner for loop, this body is colliding with another body and was deleted
 
                     } else {
 
                         planets[j].set_vel(calc_momentum_transfer(planets[i].mass, planets[j].mass, planets[i].velocity, planets[j].velocity));
                         planets[j].add_mass(planets[i].mass);
                         planets.splice(i,1);
+                        break; //break out of inner for loop - otherwise program will crash at seemingly random times with multiple collisions
                     }
                 }
             }
