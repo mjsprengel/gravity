@@ -13,12 +13,7 @@ where g(t,x) is the Planet's calculated acceleration due to all other bodies, an
 
 
 # Screenshot
-![image](https://user-images.githubusercontent.com/18639528/36774129-615dc652-1c22-11e8-8170-c232552ef7b0.png)
 
-A short time later...
-![image](https://user-images.githubusercontent.com/18639528/36774169-866fa60e-1c22-11e8-9530-63d015704bff.png)
-
-This is about how many particles it takes to noticibly slow the simulation:
 ![image](https://user-images.githubusercontent.com/18639528/36774209-aecf6cec-1c22-11e8-99c8-fd8203a5cbd5.png)
 
 
