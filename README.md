@@ -9,7 +9,7 @@ from each body in the array, on to every other body in the array. These physics 
 
 ![image](https://user-images.githubusercontent.com/18639528/36775137-6bba5c42-1c26-11e8-80ed-4c703f1b6840.png)
 
-where g(t,x) is the Planet's calculated acceleration due to all other bodies, and f(t,v) is the current velocity of itself.
+where g(t,x) is the Planet's calculated acceleration due to all other bodies, and f(t,v_n+1) is the velocity on the next frame. The Euler-Cromer method uses what the velocity would be during the next timestep, not the current timestep, to calculate what the position will be. This appears to have interesting properties, like conservation of energy for simulated oscillatory systems where the normal Euler method tends to blow up in energy over time due to cascading/accumulating error.
 
 
 # Screenshot
